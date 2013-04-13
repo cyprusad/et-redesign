@@ -10,10 +10,7 @@
 	height: 1500px;
 }
 
-.section-content {
-	padding: 10px 0;
-}
-
+/* HEADER */
 
 .sections {
 	border-top: 1px solid #000;
@@ -43,7 +40,7 @@
 
 .news-ticker {
 	padding: 5px 5px;
-	border-bottom: 1px solid #000;
+	border-bottom: 1px dotted #000;
 	font-size: 0.8em;
 }
 
@@ -53,7 +50,7 @@
 
 	h1 {
 		text-align: right;
-		font: bold 3.8em "Helvetica Neue";
+		font: 400 6em "ltc-bodoni-175", "Helvetica Neue";
 		padding: 5px 0;	
 		margin: 0;
 	}
@@ -61,12 +58,18 @@
 	margin: 5px 0;
 }
 
+/* MAIN CONTENT */
+
+.main-content {
+	padding-left: 0 !important;
+}
+$main-colour: #49827E;
 .news-item {
-	$main-colour: #49827E;
+	
 	h4 {
 		font-size: 0.9em;
 		color: $main-colour;
-		padding: 5px 0 0 0;
+		padding: 0;
 		margin: 0;
 
 		.time {
@@ -78,14 +81,17 @@
 		padding: 2px 0 0 0;
 		margin: 0;
 		font-size: 1.4em;
+		line-height: 1em;
 	}
 	p {
 		padding: 5px 0 0 0;
-		font: normal 1em/1.4em 'Helvetica';
+		font: normal 1em/1.4em Helvetica;
 	}
 
 	.news-link {
 		color: #000;
+		font-weight: 600;
+		font-family:  "garamond-premier-pro-display", "ltc-bodoni-175";
 		&:hover {
 			color: $main-colour;
 		}
@@ -97,7 +103,8 @@
 		font-size: 2em;
 	}
 	p {
-		font: normal 1em/1.4em 'Helvetica';
+		font-weight: normal;
+		font-size: 1em/1.4em;
 	}
 }
 
@@ -167,15 +174,64 @@
 
 
 .specials {
-	border-top: 4px solid #000;
-	border-bottom: 4px solid #000;
-	padding: 5px 0;
+		border-top: 4px solid #000;
+		border-bottom: 4px solid #000;
+		padding: 5px 10px;
 
-	.columns {
-		padding: 0;
+		h2 {
+			font-family: 'ltc-bodoni-175';
+			font-weight: normal;
+			text-transform: uppercase;
+			font-size: 1.4em;
+		}
+}
+
+.special-item {
+	h4 {
+		width: 170px;
+		font-size: 1.1em;
+		font-family: 'garamond-premier-pro-display';
+		font-weight: 400;
 	}
 }
 
+
+.subsection {
+	margin: 10px 0;
+	padding: 0 5px;
+	header {
+		img {
+			float: left;
+			margin-right: 10px;
+		}
+	}
+	.subsection-header {
+		padding: 0;
+	}
+	.subsection-img {
+	}
+	h5, h4 {
+		font-size: 0.7em;
+		color: $main-colour;
+		padding: 0 0 0 0;
+		margin: 0;
+
+		.time {
+			color: #999;
+			font-size: 0.8em;
+		}
+	}
+	h3 {
+		font-size: 1.1em;
+	}
+	p {
+		font-size: 0.8em;
+		padding: 5px 0 0 0;
+	}
+	ul {
+		list-style: none;
+	}
+}
 
 
 
