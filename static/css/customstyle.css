@@ -1,45 +1,216 @@
 /* line 1, ../../foundation/sass/customstyle.scss */
-.content-area {
-  margin: 10px 0 0 0;
-  padding: 10px 0 10px 0;
+.container {
+  background: #f4e1c3;
+  position: relative;
+  top: 20px;
+  padding: 40px 20px;
 }
 
-/* line 11, ../../foundation/sass/customstyle.scss */
-.song-info {
-  margin: 15px 0 0 0;
-}
-
-/* line 15, ../../foundation/sass/customstyle.scss */
-.song-info h6 {
+/* line 8, ../../foundation/sass/customstyle.scss */
+.site-title {
+  font-family: "ltc-bodoni-175", serif;
   text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* line 14, ../../foundation/sass/customstyle.scss */
+.sections {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+/* line 23, ../../foundation/sass/customstyle.scss */
+.section-link {
+  height: 70px;
+  margin: 10px 0;
+  border-right: 1px solid #000;
+}
+/* line 28, ../../foundation/sass/customstyle.scss */
+.section-link h3 {
   font-size: 0.9em;
-  letter-spacing: 1px;
+  font-family: Helvetica;
+}
+/* line 33, ../../foundation/sass/customstyle.scss */
+.section-link p {
   padding: 0;
   margin: 0;
-  font-family: "garamond-premier-pro-display", serif;
-  color: #333;
-  font-size: 1.2em;
-}
-
-/* line 26, ../../foundation/sass/customstyle.scss */
-.song-info p {
-  font-family: "proxima-nova", "Helvetica", sans-serif;
-  font-size: 1.4em;
-}
-
-/* line 31, ../../foundation/sass/customstyle.scss */
-.song-info ul {
-  list-style: none;
-}
-
-/* line 35, ../../foundation/sass/customstyle.scss */
-.song-info ul li {
-  float: left;
-  margin: 0 10px 0 0;
+  font: normal 0.7em/1.2em "Helvetica";
 }
 
 /* line 40, ../../foundation/sass/customstyle.scss */
-.site-title a {
-  font-family: "garamond-premier-pro-display", "Helvetica", serif;
+.last-section-link {
+  border-right: none;
+}
+
+/* line 44, ../../foundation/sass/customstyle.scss */
+.news-ticker {
+  padding: 5px 5px;
+  border-bottom: 1px solid #000;
+  font-size: 0.8em;
+}
+
+/* line 50, ../../foundation/sass/customstyle.scss */
+.section-title {
+  border-bottom: 5px solid #000;
+  margin: 5px 0;
+}
+/* line 54, ../../foundation/sass/customstyle.scss */
+.section-title h1 {
+  text-align: right;
+  font: bold 3.8em "Helvetica Neue";
+  padding: 5px 0;
+  margin: 0;
+}
+
+/* line 66, ../../foundation/sass/customstyle.scss */
+.news-item h4 {
+  font-size: 0.9em;
+  color: #49827e;
+  padding: 5px 0 0 0;
+  margin: 0;
+}
+/* line 72, ../../foundation/sass/customstyle.scss */
+.news-item h4 .time {
+  color: #999;
+  font-size: 0.8em;
+}
+/* line 77, ../../foundation/sass/customstyle.scss */
+.news-item h3 {
+  padding: 2px 0 0 0;
+  margin: 0;
   font-size: 1.4em;
+}
+/* line 82, ../../foundation/sass/customstyle.scss */
+.news-item p {
+  padding: 5px 0 0 0;
+  font: normal 1em/1.4em "Helvetica";
+}
+/* line 87, ../../foundation/sass/customstyle.scss */
+.news-item .news-link {
+  color: #000;
+}
+/* line 89, ../../foundation/sass/customstyle.scss */
+.news-item .news-link:hover {
+  color: #49827e;
+}
+
+/* line 96, ../../foundation/sass/customstyle.scss */
+.main-headline h3 {
+  font-size: 2em;
+}
+/* line 99, ../../foundation/sass/customstyle.scss */
+.main-headline p {
+  font: normal 1em/1.4em "Helvetica";
+}
+
+/* line 104, ../../foundation/sass/customstyle.scss */
+.section-content {
+  padding: 10px 0;
+}
+
+/* line 109, ../../foundation/sass/customstyle.scss */
+.sidebar-r {
+  background: #ced2c3;
+}
+/* line 113, ../../foundation/sass/customstyle.scss */
+.sidebar-r .r-section h4 {
+  text-align: right;
+  border-bottom: 2px solid #000;
+}
+/* line 118, ../../foundation/sass/customstyle.scss */
+.sidebar-r .r-section p {
+  font-size: 1.2em;
+}
+
+/* line 124, ../../foundation/sass/customstyle.scss */
+.article-list {
+  border-top: 1px solid #000;
+  list-style: none;
+  padding: 5px 0;
+}
+/* line 128, ../../foundation/sass/customstyle.scss */
+.article-list li {
+  border-bottom: 1px solid #000;
+  font-size: 0.7em;
+  margin: 2px 0;
+}
+/* line 133, ../../foundation/sass/customstyle.scss */
+.article-list li a {
+  display: block;
+  color: #000;
+}
+/* line 136, ../../foundation/sass/customstyle.scss */
+.article-list li a:hover {
+  font-weight: bold;
+}
+
+/* line 143, ../../foundation/sass/customstyle.scss */
+.sub-nav {
+  margin-bottom: 2px;
+}
+/* line 145, ../../foundation/sass/customstyle.scss */
+.sub-nav dd {
+  padding: 0;
+  margin-bottom: 1px;
+}
+/* line 149, ../../foundation/sass/customstyle.scss */
+.sub-nav dd.active a {
+  background: #000;
+}
+/* line 152, ../../foundation/sass/customstyle.scss */
+.sub-nav a {
+  font-size: 0.8em;
+  padding: 0.1875em 0.5625em;
+}
+/* line 156, ../../foundation/sass/customstyle.scss */
+.sub-nav a:hover {
+  background: #000;
+  cursor: pointer !important;
+  color: #fff;
+}
+
+/* line 164, ../../foundation/sass/customstyle.scss */
+.featured-videos {
+  padding: 5px 0;
+  margin-bottom: 10px;
+  height: 330px;
+}
+
+/* line 171, ../../foundation/sass/customstyle.scss */
+.sidebar-l {
+  border-right: 2px solid #000;
+}
+
+/* custom player skin */
+/* line 177, ../../foundation/sass/customstyle.scss */
+.flowplayer {
+  width: 90%;
+  background-color: #222;
+  background-size: cover;
+  max-width: 800px;
+}
+
+/* line 178, ../../foundation/sass/customstyle.scss */
+.flowplayer .fp-controls {
+  background-color: #eeeeee;
+}
+
+/* line 179, ../../foundation/sass/customstyle.scss */
+.flowplayer .fp-timeline {
+  background-color: #cccccc;
+}
+
+/* line 180, ../../foundation/sass/customstyle.scss */
+.flowplayer .fp-progress {
+  background-color: #111111;
+}
+
+/* line 181, ../../foundation/sass/customstyle.scss */
+.flowplayer .fp-buffer {
+  background-color: #f9f9f9;
+}
+
+/* line 182, ../../foundation/sass/customstyle.scss */
+.flowplayer {
+  background-image: url(http://farm5.staticflickr.com/4044/4573206402_f625209528_b.jpg);
 }

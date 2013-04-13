@@ -15,7 +15,7 @@
 // $em-base: 16px;
 
 // We use these to control various global styles
-// $body-bg: #fff;
+// $body-bg: #f4e1c3;
 // $body-font-color: #222;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
@@ -50,7 +50,7 @@
 // Grid Variables
 //
 
-// $row-width: 62.5em;
+ $row-width: 1000px; //62.5em
 // $column-gutter: 1.875em;
 // $total-columns: 12;
 
@@ -823,14 +823,14 @@
 
 // We use this to control the definition
 // $sub-nav-font-size: emCalc(14px);
-// $sub-nav-font-color: #999;
-// $sub-nav-font-weight: normal;
+ $sub-nav-font-color: #000;
+ $sub-nav-font-weight: bold;
 // $sub-nav-text-decoration: none;
-// $sub-nav-border-radius: 1000px;
+ $sub-nav-border-radius: 0px;
 
 // We use these to control the active item styles
 // $sub-nav-active-font-weight: bold;
-// $sub-nav-active-bg: $primary-color;
+ $sub-nav-active-bg: #000;
 // $sub-nav-active-color: #fff;
 // $sub-nav-active-padding: emCalc(3px) emCalc(9px);
 // $sub-nav-active-cursor: default;
@@ -949,7 +949,7 @@
  $topbar-bg: #111;
 
 // Height and margin
-// $topbar-height: 45px;
+ $topbar-height: 90px;
 // $topbar-margin-bottom: emCalc(30px);
 
 // Control Input height for top bar
@@ -957,7 +957,7 @@
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: bold;
-// $topbar-title-font-size: emCalc(17px);
+ $topbar-title-font-size: emCalc(34px);
 
 // Set the link colors and styles for top-level nav
 // $topbar-link-color: #fff;
