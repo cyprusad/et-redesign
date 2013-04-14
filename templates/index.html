@@ -6,7 +6,18 @@
 <head>
 	<meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>TOI redesign</title>
+  <title>A redesign</title>
+  <meta name="description" content="A redesign of economictimes.com by Siddharth Jha, Partner at Roti">
+<meta name="viewport" content="width=device-width">
+
+<meta property="og:title" content="Roti | A user experience design firm"/>
+<meta property="og:type" content="company"/>
+<meta property="og:url" content="http://www.designbyroti.com/"/>
+<meta property="og:image" content="http://designbyroti.com/static/img/roti-hologram.png"/>
+<meta property="og:site_name" content="Roti"/>
+<meta property="fb:admins" content="1664460643"/>
+<meta property="og:description"
+      content="Roti is a design firm headquartered in Toronto, Canada. We convert ideas to powerful brands and state-of-the-art digital products."/>
 
   <link rel="stylesheet" href="/static/css/normalize.css" />
   
@@ -14,6 +25,8 @@
   <link rel="stylesheet" href="/static/css/customstyle.css">
   <link rel="stylesheet" href="/static/css/general_foundicons.css">
   <link rel="stylesheet" href="/static/css/social_foundicons.css">
+
+
 
    <!-- player skin -->
    <link rel="stylesheet" type="text/css"
@@ -28,7 +41,42 @@
 
 </head>
 <body>
-	
+	<div class="fixed">
+		<nav class="top-bar hidden">
+		  <ul class="title-area">
+		    <!-- Title Area -->
+		    <li class="name">
+		      <h1><a href="/">ET</a></h1>
+		    </li>
+		    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+		    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+		  </ul>
+
+		  <section class="top-bar-section">
+		    <!-- Left Nav Section -->
+		    <ul class="left">
+		      <li class="divider"></li>
+		      <li><a href="/">Markets</a></li>
+		      <li class="divider"></li>
+		      <li><a href="/">Technology</a></li>
+		      <li class="divider"></li>
+		      <li><a href="/">Finance</a>
+		      </li>
+		      <li class="divider"></li>
+		      <li><a href="/">Opinion</a>
+		      </li>
+		      <li class="divider"></li>
+		      <li><a href="/">Features</a>
+		      </li>
+		      <li class="divider"></li>
+		      <li><a href="/">Blog</a>
+		      </li>
+		      <li class="divider"></li>
+		    </ul>
+		  </section>
+		</nav>
+	</div>
+
 	<div class="row container">
 	    <div class="large-2 columns">
 			<section class="sidebar-l">
@@ -57,7 +105,7 @@
 						</li>
 						<li class="market-up">
 							<h2><i class="general foundicon-up-arrow"></i>2206.78</h2>
-							<h3>Shanghai<span>+12.7735</h3>
+							<h3>Shanghai<span>+12.77</h3>
 						</li>
 					</ul>
 					<ul class="markets-list hidden" id="us-markets">
@@ -150,53 +198,65 @@
 		<div class="large-10 columns">
 			<div class="row header">
 				<div class="large-12 columns">
+					<header class="site-header"><h4><a href="/">The Economic Times</a><h4></header>
 					<div class="row sections">
 						<div class="large-2 columns">
 							<section class="section-link">
-								<a href="#">
+								<a class="target-section" href="/">
 									<header>Markets</header>
-									<p>SENSEX reaches record-high</p>
 								</a>
+								
+									<p><a class="target-headline" href="/article">SENSEX reaches record-high</a></p>
+								
 							</section>
 						</div>
 						<div class="large-2 columns">
 							<section class="section-link">
-								<a href="#">
+								<a class="target-section" href="/">
 									<header>Technology</header>
-									<p>Infy acquires MyMantra for $50 mn</p>
 								</a>
+								
+									<p><a class="target-headline" href="/article">The Infosys that India needs</a></p>
+								
 							</section>
 						</div>
 						<div class="large-2 columns">
 							<section class="section-link">
-								<a href="#">
+								<a class="target-section" href="/">
 									<header>Finance</header>
-									<p>Mutual Funds hot to invest in for 2013	</p>
 								</a>
+								
+									<p><a class="target-headline" href="/article">Mutual Fund investment strategies rising </a></p>
+								
 							</section>
 						</div>
 						<div class="large-2 columns">
 							<section class="section-link">
-								<a href="#">
+								<a class="target-section" href="/">
 									<header>Opinion</header>
-									<p>Warren Buffet, ET special editor on India's future</p>
 								</a>
+								
+									<p><a class="target-headline" href="/article">ET Special Editor Warren Buffett on India's future</a></p>
 							</section>
 						</div>
 						<div class="large-2 columns">
 							<section class="section-link">
-								<a href="#">
+								<a class="target-section" href="/">
 									<header>Features</header>
-									<p>Adweek India prepares to welcome the world's Mad Men</p>
 								</a>
+								
+									<p><a class="target-headline" href="/article">Adweek India welcomes the Mad Men</a></p>
+								
 							</section>
 						</div>
 						<div class="large-2 columns">
 							<section class="section-link last-section-link">
-								<a href="#">
+								<a class="target-section" href="/">
 									<header>Blogs</header>
-									<p>Soaps creating new platform for teenage actors</p>
 								</a>
+								
+									<p><a class="target-headline" href="/article">Tinsel town boy, Ravi Kumar, shines big at box office</a></p>
+								
 							</section>
 						</div>
 					</div>
@@ -227,61 +287,61 @@
 						<div class="large-7 columns">
 							<div class="row">
 								<div class="large-12 columns">
-									<img src="/static/img/speech.jpg">
+									<img src="/static/img/infosys.jpeg">
 								</div>
 							</div>
 							<div class="row">
 								<div class="large-12 columns">
 									<section class="news-item main-headline">
-										<span class="news-item-label">DEALS<span class="time">1 hour ago</span></span>
+										<span class="news-item-label">ITeS<span class="time">1 hour ago</span></span>
 										<header>
-											<h1><a class="news-link" href="#">Infy acquires MyMantra for $50mn</a></h1>
+											<h1><a class="news-link" href="/article">The Infosys that India needs</a></h1>
 										</header>
-										<p>Infosys said it acquired the lifestyle startup MyMantra, amid reports that the software giant was readying its own lifestyle portal. The deal is rumoured to be valued at $49mn in cash and $1mn in stock options.</p>
+										<p>While Infosys needs the first Infy story to look better, India needs the second Infy story to get bigger. To get that hope back, India needs another Infosys.</p>
 									</section>
 								</div>
 							</div>
 							<div class="row">
-								<div class="large-6 columns">
-									<section class="news-item">
-
-										<span class="news-item-label">SOFTWARE<span class="time">1 hour ago</span></span>
-
-										<header>
-											<h1><a class="news-link" href="#">Now a software that helps in e-learning via TV set-top boxes</a></h1>
-										</header>
-										<p>City-based Centre for Development of Advanced Computing (C-DAC) has launched a new software that facilitates e-learning via set-top boxes (STBs).</p>
-									</section>
-								</div>
-								<div class="large-6 columns">
-									<section class="news-item">
-										<span class="news-item-label">ITeS<span class="time">50 min ago</span></span>
-										<header>
-											<h1><a href="#" class="news-link">Q2 profits soar among BPO firms</a></h1>
-										</header>
-										<p>After Q2 earnings call, the country's top BPO firms competed for the most profitable ITES company. HCL Infosystems emerged as a clear winner.</p>
-									</section>
-								</div>
-							</div>
-							<div class="row">
-								<div class="large-6 columns">
+								<div class="large-6 small-6 columns">
 									<section class="news-item">
 
 										<span class="news-item-label">TELECOM<span class="time">1 hour ago</span></span>
 
 										<header>
-											<h1><a class="news-link" href="#">Karbonn launches first phone on Broadcom chipsets</a></h1>
+											<h1><a class="news-link" href="/article">Surging India sales may propel Apple's topline to over $1 bn</a></h1>
 										</header>
-										<p>Mobile devices company Karbonn has selected US chip maker Broadcom for its new range of 3G smartphones, following a trend where some home grown phone makers are using chipsets made by western companies. </p>
+										<p>According to latest filings with the Registrar of Companies, Apple India's revenues rose 223% to 2003.9 crore in FY12, from Rs 620 crore a year ago.</p>
 									</section>
 								</div>
-								<div class="large-6 columns">
+								<div class="large-6 small-6 columns">
 									<section class="news-item">
-										<span class="news-item-label">TELECOM<span class="time">50 min ago</span></span>
+										<span class="news-item-label">Internet<span class="time">50 min ago</span></span>
 										<header>
-											<h1><a href="#" class="news-link">ZTE launches data cards for Indian market</a></h1>
+											<h1><a href="/article" class="news-link">Facebook to launch redesign next week</a></h1>
 										</header>
-										<p>ZTE India, a wholly-owned subsidiary of Chinese telecom equipment maker ZTE corporation, has partnered with Digilife Distribution and Marketing Services, a subsidiary of HCL Infosystems for channel distribution and Flipkart.com for its online sales.</p>
+										<p>Facebook, the world's largest social network, announced that it would launch a major redesign of the newsfeed next week.</p>
+									</section>
+								</div>
+							</div>
+							<div class="row">
+								<div class="large-6 small-6 columns">
+									<section class="news-item">
+
+										<span class="news-item-label">TELECOM<span class="time">1 hour ago</span></span>
+
+										<header>
+											<h1><a class="news-link" href="/article">After EMIs, Samsung offers cash back to woo smartphone buyers </a></h1>
+										</header>
+										<p>After launching EMI scheme, Korean electronic giant Samsung is now offering 15% cash back on its flagship 'Galaxy' range.</p>
+									</section>
+								</div>
+								<div class="large-6 small-6 columns">
+									<section class="news-item">
+										<span class="news-item-label">SOFTWARE<span class="time">50 min ago</span></span>
+										<header>
+											<h1><a href="/article" class="news-link">Software that tracks what you think</a></h1>
+										</header>
+										<p>Charlie Brown Ventures, the world's leading software manufacturer, revealed videos of their upcoming software platform that can tell what people are actually thinking.</p>
 									</section>
 								</div>
 							</div>
@@ -290,25 +350,49 @@
 							<div class="sidebar-r">
 								<header class="r-section-header"><h1>Popular</h1></header>
 								<dl class="sub-nav">
-								  <dd class="active"><a href="#">Most Read</a></dd>
-								  <dd><a href="#">Most Commented</a></dd>
-								  <dd><a href="#">Most Shared</a></dd>
+								  <dd class="active" id="most-read-header"><a href="#" id="target-most-read">Most Read</a></dd>
+								  <dd id="most-commented-header"><a href="#" id="target-most-commented">Most Commented</a></dd>
+								  <dd id="most-shared-header"><a href="#" id="target-most-shared">Most Shared</a></dd>
 								</dl>
-								<ul class="article-list">
-									<li><a href="#">Twitter acquires music startup We Are Hunted</a></li>
-									<li><a href="#">Warren Buffet, ET special editor on India's future</a></li>
+								<ul class="article-list" id="mostread">
+									<li><a href="/article">Obama uses Pair app to talk to his wife: an ET exclusive</a></li>
+									<li><a href="#">8-year-old kid creates social network for kids under 13</a></li>
 									<li><a href="#">Q2 profits soar among BPO firms</a></li>
-									<li><a href="#">Twitter acquires music startup We Are Hunted</a></li>
-									<li><a href="#">Q2 profits soar among BPO firms</a></li>
-									<li><a href="#">Warren Buffet, ET special editor on India's future</a></li>
-									<li><a href="#">Infy acquires MyMantra for $50 mn</a></li>
-									<li><a href="#">Q2 profits soar among BPO firms</a></li>
-									<li><a href="#">Warren Buffet, ET special editor on India's future</a></li>
-									<li><a href="#">Twitter acquires music startup We Are Hunted</a></li>
+									<li><a href="#">HCL Technologies stocks skyrocket in wake of Infosys plunge</a></li>
+									<li><a href="#">Airtel buys Canadian mobile startup</a></li>
+									<li><a href="#">IIT Delhi students create app to report corrupt officials</a></li>
+									<li><a href="#">A NASDAQ of BitCoin?</a></li>
+									<li><a href="#">The Infosys that India needs</a></li>
+									<li><a href="#">Facebook to launch redesign next week</a></li>
+									<li><a href="#">Software that tracks what you think</a></li>
+								</ul>
+								<ul class="article-list hidden" id="mostcommented">
+									<li><a href="/article">Surging India sales may propel Apple's topline to over $1 bn</a></li>
+									<li><a href="#">Software that tracks what you think</a></li>
+									<li><a href="#">Facebook to launch redesign next week</a></li>
+									<li><a href="#">Google, EU near deal on search probe: Report</a></li>
+									<li><a href="#">Wipro's Azim Premji speaks defends Infosys</a></li>
+									<li><a href="#">IIT Delhi students create app to report corrupt officials</a></li>
+									<li><a href="#">Blipkart to launch next version of platform</a></li>
+									<li><a href="#">The Infosys that India needs</a></li>
+									<li><a href="#">Obama uses Pair app to talk to his wife: an ET exclusive</a></li>
+									<li><a href="#">HCL Technologies stocks skyrocket in wake of Infosys plunge</a></li>
+								</ul>
+								<ul class="article-list hidden" id="mostshared">
+									<li><a href="/article">8-year-old kid creates social network for kids under 13</a></li>
+									<li><a href="#">Obama uses Pair app to talk to his wife: an ET exclusive</a></li>
+									<li><a href="#">Software that tracks what you think</a></li>
+									<li><a href="#">The Infosys that India needs</a></li>
+									<li><a href="#">IIT Delhi students create app to report corrupt officials</a></li>
+									<li><a href="#">A NASDAQ of BitCoin?</a></li>
+									<li><a href="#">Airtel launches special international roaming packs</a></li>
+									<li><a href="#">Canadian software giant ThinkWorks opens up Bangalore Office</a></li>
+									<li><a href="#">Twitter buys music startup We Are Hunted</a></li>
+									<li><a href="#">Warren Buffet makes tech predictions for 2014</a></li>
 								</ul>
 								<div class="featured-videos">
 									 <header class="featured-videos-header"><h1>ET Tech</h1></header>
-									 <div data-swf="http://releases.flowplayer.org/5.3.2/flowplayer.swf" class="flowplayer no-toggle aside-time no-volume color-light" style="width: 307px; height: 213px;">
+									 <div data-swf="http://releases.flowplayer.org/5.3.2/flowplayer.swf" class="flowplayer no-toggle aside-time no-volume color-light" style="width: 307px; height: 213px;" class="featured-vid">
 									      <video>
 									         <source type="video/webm" src="http://stream.flowplayer.org/bauhaus/624x260.webm"/>
 									         <source type="video/mp4" src="http://stream.flowplayer.org/bauhaus/624x260.mp4"/>
@@ -340,27 +424,27 @@
 							<header>
 								<h1>Featured</h1>
 							</header>
-							<div class="large-3 columns">
+							<div class="large-3 small-6 columns">
 								<section class="special-item">
-									<img src="http://placehold.it/175x120">
-									<h2>What tablet should you buy?</h2>
+									<img src="/static/img/iPad.jpg">
+									<h2>A look at the latest tablets</h2>
 								</section>
 							</div>
-							<div class="large-3 columns">
+							<div class="large-3 small-6 columns">
 								<section class="special-item">
-									<img src="http://placehold.it/175x120">
+									<img src="/static/img/infy.jpg">
 									<h2>Infosys over the years</h2>
 								</section>
 							</div>
-							<div class="large-3 columns">
+							<div class="large-3 small-12 columns">
 								<section class="special-item">
-									<img src="http://placehold.it/175x120">
+									<img src="/static/img/zuck.jpg">
 									<h2>The Immigration Reform Bill</h2>
 								</section>
 							</div>
-							<div class="large-3 columns">
+							<div class="large-3 small-12 columns">
 								<section class="special-item">
-									<img src="http://placehold.it/175x120">
+									<img src="/static/img/startupkids.jpg">
 									<h2>The Startup Kids of India</h2>
 								</section>
 							</div>
@@ -371,12 +455,12 @@
 						<div class="large-6 columns">
 							<section class="subsection">
 								<div class="row">
-									<div class="large-4 columns">
+									<div class="large-4 small-4 columns">
 										<div class="subsection-img">
-											<img src="http://placehold.it/100x100">
+											<img src="/static/img/google.jpg">
 										</div>
 									</div>
-									<div class="large-8 columns">
+									<div class="large-8 small-8 columns">
 										<header>
 											<span class="news-item-label">SOFTWARE<span class="time">4 hr ago</span></span>
 											<h1>Google, EU near deal on search probe: Report </h1>
@@ -391,15 +475,15 @@
 						<div class="large-6 columns">
 							<section class="subsection">
 								<div class="row">
-									<div class="large-4 columns">
+									<div class="large-4 small-4 columns">
 										<div class="subsection-img">
-											<img src="http://placehold.it/100x100">
+											<img src="/static/img/obama.jpg">
 										</div>
 									</div>
-									<div class="large-8 columns">
+									<div class="large-8 small-8 columns">
 										<header>
-											<span class="news-item-label">SOFTWARE<span class="time">4 hr ago</span></span>
-											<h1>Google, EU near deal on search probe: Report </h1>
+											<span class="news-item-label">INTERNET<span class="time">4 hr ago</span></span>
+											<h1>Obama uses Pair app to talk to his wife: an ET exclusive</h1>
 											
 										</header>
 									</div>
@@ -412,15 +496,15 @@
 						<div class="large-6 columns">
 							<section class="subsection">
 								<div class="row">
-									<div class="large-4 columns">
+									<div class="large-4 small-4 columns">
 										<div class="subsection-img">
-											<img src="http://placehold.it/100x100">
+											<img src="/static/img/premji.jpg">
 										</div>
 									</div>
-									<div class="large-8 columns">
+									<div class="large-8 small-8 columns">
 										<div class="subsection-header">
-											<span class="news-item-label">SOFTWARE<span class="time">4 hr ago</span></span>
-											<h1>Google, EU near deal on search probe: Report </h1>
+											<span class="news-item-label">ITeS<span class="time">8 hr ago</span></span>
+											<h1>Wipro's Azim Premji speaks defends Infosys</h1>
 											
 										</div>
 									</div>
@@ -431,15 +515,15 @@
 						<div class="large-6 columns">
 							<section class="subsection">
 								<div class="row">
-									<div class="large-4 columns">
+									<div class="large-4 small-4 columns">
 										<div class="subsection-img">
-											<img src="http://placehold.it/100x100">
+											<img src="/static/img/blipkart.jpg">
 										</div>
 									</div>
-									<div class="large-8 columns">
+									<div class="large-8 small-8 columns">
 										<header>
-											<span class="news-item-label">SOFTWARE<span class="time">4 hr ago</span></span>
-											<h1>Google, EU near deal on search probe: Report </h1>
+											<span class="news-item-label">Internet<span class="time">4 hr ago</span></span>
+											<h1>Blipkart to launch next version of platform</h1>
 											
 										</header>
 									</div>
@@ -449,14 +533,14 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="large-6 columns">
+						<div class="large-6 small-6 columns">
 							<section class="subsection">
 								<div class="row">
 									
 									<div class="large-12 columns">
 										<header>
-											<span class="news-item-label">SOFTWARE<span class="time">4 hr ago</span></span>
-											<h1>Google, EU near deal on search probe: Report </h1>
+											<span class="news-item-label">TELECOM<span class="time">8 hr ago</span></span>
+											<h1>Airtel buys Canadian mobile startup</h1>
 											
 										</header>
 									</div>
@@ -464,46 +548,14 @@
 								
 							</section>
 						</div>
-						<div class="large-6 columns">
+						<div class="large-6 small-6 columns">
 							<section class="subsection">
 								<div class="row">
 									
 									<div class="large-12 columns">
 										<header>
-											<span class="news-item-label">SOFTWARE<span class="time">4 hr ago</span></span>
-											<h1>Google, EU near deal on search probe: Report </h1>
-											
-										</header>
-									</div>
-								</div>
-								
-							</section>
-						</div>
-					</div>
-					<div class="row">
-						<div class="large-6 columns">
-							<section class="subsection">
-								<div class="row">
-									
-									<div class="large-12 columns">
-										<header>
-											<span class="news-item-label">SOFTWARE<span class="time">4 hr ago</span></span>
-											<h1>Google, EU near deal on search probe: Report </h1>
-											
-										</header>
-									</div>
-								</div>
-								
-							</section>
-						</div>
-						<div class="large-6 columns">
-							<section class="subsection">
-								<div class="row">
-									
-									<div class="large-12 columns">
-										<header>
-											<span class="news-item-label">SOFTWARE<span class="time">4 hr ago</span></span>
-											<h1>Google, EU near deal on search probe: Report </h1>
+											<span class="news-item-label">SOFTWARE<span class="time">9 hr ago</span></span>
+											<h1>Canadian software giant ThinkWorks opens up Bangalore Office</h1>
 											
 										</header>
 									</div>
@@ -513,14 +565,44 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="large-6 columns">
+						<div class="large-6 small-6 columns">
 							<section class="subsection">
 								<div class="row">
 									
 									<div class="large-12 columns">
 										<header>
-											<span class="news-item-label">SOFTWARE<span class="time">4 hr ago</span></span>
-											<h1>Google, EU near deal on search probe: Report </h1>
+											<span class="news-item-label">ITeS<span class="time">9 hr ago</span></span>
+											<h1>HCL Technologies stocks skyrocket in wake of Infosys plunge</h1>
+										</header>
+									</div>
+								</div>
+								
+							</section>
+						</div>
+						<div class="large-6 small-6 columns">
+							<section class="subsection">
+								<div class="row">
+									
+									<div class="large-12 columns">
+										<header>
+											<span class="news-item-label">Internet<span class="time">11 hr ago</span></span>
+											<h1>8-year-old kid creates social network for kids under 13</h1>
+										</header>
+									</div>
+								</div>
+								
+							</section>
+						</div>
+					</div>
+					<div class="row">
+						<div class="large-6 small-6 columns">
+							<section class="subsection">
+								<div class="row">
+									
+									<div class="large-12 columns">
+										<header>
+											<span class="news-item-label">TELECOM<span class="time">4 hr ago</span></span>
+											<h1>Vodafone CEO hints on big acquisitions for 2013</h1>
 											
 										</header>
 									</div>
@@ -528,14 +610,14 @@
 								
 							</section>
 						</div>
-						<div class="large-6 columns">
+						<div class="large-6 small-6 columns">
 							<section class="subsection">
 								<div class="row">
 									
 									<div class="large-12 columns">
 										<header>
 											<span class="news-item-label">SOFTWARE<span class="time">4 hr ago</span></span>
-											<h1>Google, EU near deal on search probe: Report </h1>
+											<h1>IIT Delhi students create app to report corrupt officials</h1>
 											
 										</header>
 									</div>
@@ -554,12 +636,12 @@
 										<h2>Internet</h2>
 										<ul class="more-stories-list">
 											
-											<li><a href="#">World markets set for second best week of year</a></li>
-											<li><a href="#">World markets set for second best week of year</a></li>
-											<li><a href="#">World markets set for second best week of year</a></li>
-											<li><a href="#">World markets set for second best week of year</a></li>
-											<li><a href="#">World markets set for second best week of year</a></li>
-											<li class="last"><a href="#">World markets set for second best week of year</a></li>
+											<li><a href="/article">Amazon lifts executive stock awards as Apple rivalry heats up</a></li>
+											<li><a href="/article">Fred Wilson on Bitcoin, Airbnb and immigration</a></li>
+											<li><a href="/article">PayPal acquisition brings growth hackers into the fold</a></li>
+											<li><a href="/article">World markets set for second best week of year</a></li>
+											<li><a href="/article">A NASDAQ of BitCoin?</a></li>
+											<li class="last"><a href="/article">BitCoin issue creates unrest at Congress</a></li>
 
 										</ul>
 									</div>
@@ -567,12 +649,12 @@
 										<h2>Software</h2>
 										<ul class="more-stories-list">
 											
-											<li><a href="#">World markets set for second best week of year</a></li>
-											<li><a href="#">World markets set for second best week of year</a></li>
-											<li><a href="#">World markets set for second best week of year</a></li>
-											<li><a href="#">World markets set for second best week of year</a></li>
-											<li><a href="#">World markets set for second best week of year</a></li>
-											<li class="last"><a href="#">World markets set for second best week of year</a></li>
+											<li><a href="#">Now a software that helps in e-learning via TV set-top boxes</a></li>
+											<li><a href="#">Apple to discuss closer ties with Yahoo! </a></li>
+											<li><a href="#">Free online alternatives to expensive software</a></li>
+											<li><a href="#">Microsoft's Scroogled campaign takes on Google, says search giant upto nefarious things</a></li>
+											<li><a href="#">Ricoh launches mobile visual search platform Ocutag</a></li>
+											<li class="last"><a href="#">Cisco, IBM and others team up on new technology project</a></li>
 
 										</ul>
 									</div>
@@ -582,12 +664,12 @@
 										<h2>Telecom</h2>
 										<ul class="more-stories-list">
 											
-											<li><a href="#">World markets set for second best week of year</a></li>
-											<li><a href="#">World markets set for second best week of year</a></li>
-											<li><a href="#">World markets set for second best week of year</a></li>
-											<li><a href="#">World markets set for second best week of year</a></li>
-											<li><a href="#">World markets set for second best week of year</a></li>
-											<li class="last"><a href="#">World markets set for second best week of year</a></li>
+											<li><a href="/article">Clearwire considering interest payment default as Sprint deal looms</a></li>
+											<li><a href="/article">BlackBerry to ask regulators to probe report on returns</a></li>
+											<li><a href="/article">Airtel launches special international roaming packs</a></li>
+											<li><a href="/article">Cabinet to decide on all aspects of spectrum allocation: Kapil Sibal</a></li>
+											<li><a href="/article">Panel asked to submit report on spectrum allocation soon</a></li>
+											<li class="last"><a href="/article">Samsung launches Galaxy Pocket Neo</a></li>
 
 										</ul>
 									</div>
@@ -595,12 +677,12 @@
 										<h2>ITeS</h2>
 										<ul class="more-stories-list">
 											
-											<li><a href="#">World markets set for second best week of year</a></li>
-											<li><a href="#">World markets set for second best week of year</a></li>
-											<li><a href="#">World markets set for second best week of year</a></li>
-											<li><a href="#">World markets set for second best week of year</a></li>
-											<li><a href="#">World markets set for second best week of year</a></li>
-											<li class="last"><a href="#">World markets set for second best week of year</a></li>
+											<li><a href="#">India Post, TCS to sign Rs 1,400 cr IT deal on Monday</a></li>
+											<li><a href="#">iGate on lookout for acquisitions</a></li>
+											<li><a href="#">Europe, the hot-spot for acquisition by Indian IT companies: Experts </a></li>
+											<li><a href="#">Banks that are 'too big to fail' may also be too big to succeed': Gartner </a></li>
+											<li><a href="#">Q4 earnings: As 'turnaround' does a 'U'-turn, recovery remains a work in progress at Infosys</a></li>
+											<li class="last"><a href="#">Infosys' BFSI vertical contributes 34% to revenues</a></li>
 										</ul>
 									</div>
 								</div>
@@ -618,6 +700,12 @@
 		</div><!-- end 10-column grid -->
 	</div><!-- end container -->
 
+	<div class="row footer">
+		<div class="large-12 columns">
+				<h6>This is a redesign concept of <a href="http://economictimes.indiatimes.com">The Economic Times</a> by <a href="http://twitter.com/sidjha">@sidjha</a>, a partner at <a href="http://designbyroti.com">Roti</a>.</h6>
+		</div>
+	</div>
+
 
   <script>
   document.write('<script src=' +
@@ -625,22 +713,19 @@
   '.js><\/script>')
   </script>
   
-  <script src="/static/js/foundation/foundation.js"></script>
+  <script src="/static/js/foundation.min.js"></script>
   <script src="/static/js/foundation/foundation.topbar.js"></script>
-
-
-   <!-- flowplayer depends on jQuery 1.7.1+ -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-     <!-- flowplayer javascript component -->
-   <script src="http://releases.flowplayer.org/5.3.2/flowplayer.min.js"></script>
 
   <script src="/static/js/et.js"></script>
   <script>
     $(document).foundation();
   </script>
 
+  <!-- flowplayer depends on jQuery 1.7.1+ -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+ <!-- flowplayer javascript component -->
+	<script src="http://releases.flowplayer.org/5.3.2/flowplayer.min.js"></script>
 
-  
 
   <!--
 	<script src="/static/js/foundation/foundation.alerts.js"></script>
@@ -667,7 +752,8 @@
 	
 	<script src="javascripts/foundation/foundation.tooltips.js"></script>
 	
-	<script src="javascripts/foundation/foundation.topbar.js"></script>
+	
 -->
+
 </body>
 </html>

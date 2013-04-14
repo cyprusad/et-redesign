@@ -17,7 +17,7 @@
 // We use these to control various global styles
 // $body-bg: #f4e1c3;
 // $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+ $body-font-family: "proxima-nova", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -70,7 +70,7 @@
 //
 
 // We use these to control header font styles
-// $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+ $header-font-family: "proxima-nova", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $header-font-weight: bold;
 // $header-font-style: normal;
 // $header-font-color: #222;
@@ -946,27 +946,27 @@
 //
 
 // Background color for the top bar
- $topbar-bg: #111;
+ $topbar-bg: #f4e1c3;
 
 // Height and margin
- $topbar-height: 90px;
-// $topbar-margin-bottom: emCalc(30px);
+ $topbar-height: 50px;
+ $topbar-margin-bottom: emCalc(5px);
 
 // Control Input height for top bar
 // $topbar-input-height: 2.45em;
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: bold;
- $topbar-title-font-size: emCalc(34px);
+ $topbar-title-font-size: emCalc(28px);
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: #fff;
+ $topbar-link-color: #000;
 // $topbar-link-weight: bold;
 // $topbar-link-font-size: emCalc(13px);
 
 // Style the top bar dropdown elements
-// $topbar-dropdown-bg: #333;
-// $topbar-dropdown-link-color: #fff;
+ $topbar-dropdown-bg: #f4e1c3;
+ $topbar-dropdown-link-color: #000;
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: #fff;
 // $topbar-dropdown-toggle-alpha: 0.5;
@@ -976,8 +976,8 @@
 // $topbar-menu-link-transform: uppercase;
 // $topbar-menu-link-font-size: emCalc(13px);
 // $topbar-menu-link-weight: bold;
-// $topbar-menu-link-color: #fff;
-// $topbar-menu-icon-color: #fff;
+ $topbar-menu-link-color: #000;
+ $topbar-menu-icon-color: #000;
 // $topbar-menu-link-color-toggled: #888;
 // $topbar-menu-icon-color-toggled: #888;
 

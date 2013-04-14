@@ -1,62 +1,102 @@
+
 <!DOCTYPE html>
-<meta charset="utf-8">
-<style>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 
-body {
-  font: 10px sans-serif;
-}
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>TOI redesign</title>
 
-.arc path {
-  stroke: #fff;
-}
+  <link rel="stylesheet" href="/static/css/normalize.css" />
+  
+  <link rel="stylesheet" href="/static/css/app.css" />
 
-</style>
+  <link rel="stylesheet" href="/static/css/general_foundicons.css">
+  <link rel="stylesheet" href="/static/css/social_foundicons.css">
+
+   <!-- player skin -->
+   <link rel="stylesheet" type="text/css"
+      href="http://releases.flowplayer.org/5.3.2/skin/minimalist.css" />
+   <link rel="stylesheet" type="text/css" href="http://flowplayer.org/designer/playlist.css" />
+
+  <script src="/static/js/vendor/custom.modernizr.js"></script>
+
+  <script type="text/javascript" src="//use.typekit.net/jsc1gzv.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+
+</head>
 <body>
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script>
+  
+  <nav class="top-bar hidden">
+    <ul class="title-area">
+      <!-- Title Area -->
+      <li class="name">
+        <h1><a href="#">The Economic Times</a></h1>
+      </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
 
-var width = 960,
-    height = 500,
-    radius = Math.min(width, height) / 2;
+    <section class="top-bar-section">
+      <!-- Left Nav Section -->
+      <ul class="left">
+        <li class="divider"></li>
+        <li class="active"><a href="#">Main Item 1</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Main Item 2</a></li>
+        <li class="divider"></li>
+        <li class="has-dropdown"><a href="#">Main Item 3</a>
+        </li>
+        <li class="divider"></li>
+      </ul>
+    </section>
+  </nav>
 
-var color = d3.scale.ordinal()
-    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? '/static/js/vendor/zepto' : '/static/js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  
+  <script src="/static/js/foundation.min.js"></script>
+  <script src="/static/js/foundation/foundation.topbar.js"></script>
 
-var arc = d3.svg.arc()
-    .outerRadius(radius - 10)
-    .innerRadius(0);
 
-var pie = d3.layout.pie()
-    .sort(null)
-    .value(function(d) { return d.population; });
+  <script>
+    $(document).foundation();
+  </script>
 
-var svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height)
-  .append("g")
-    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-d3.csv("data.csv", function(error, data) {
+  
 
-  data.forEach(function(d) {
-    d.population = +d.population;
-  });
-
-  var g = svg.selectAll(".arc")
-      .data(pie(data))
-    .enter().append("g")
-      .attr("class", "arc");
-
-  g.append("path")
-      .attr("d", arc)
-      .style("fill", function(d) { return color(d.data.age); });
-
-  g.append("text")
-      .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
-      .attr("dy", ".35em")
-      .style("text-anchor", "middle")
-      .text(function(d) { return d.data.age; });
-
-});
-
-</script>
+  <!--
+  <script src="/static/js/foundation/foundation.alerts.js"></script>
+  
+  <script src="/static/js/foundation/foundation.clearing.js"></script>
+  
+  <script src="javascripts/foundation/foundation.cookie.js"></script>
+  
+  <script src="javascripts/foundation/foundation.dropdown.js"></script>
+  
+  <script src="javascripts/foundation/foundation.forms.js"></script>
+  
+  <script src="javascripts/foundation/foundation.joyride.js"></script>
+  
+  <script src="javascripts/foundation/foundation.magellan.js"></script>
+  
+  <script src="javascripts/foundation/foundation.orbit.js"></script>
+  
+  <script src="javascripts/foundation/foundation.placeholder.js"></script>
+  
+  <script src="javascripts/foundation/foundation.reveal.js"></script>
+  
+   <script src="/static/js/foundation/foundation.section.js"></script>
+  
+  <script src="javascripts/foundation/foundation.tooltips.js"></script>
+  
+  
+-->
+</body>
+</html>

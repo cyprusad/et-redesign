@@ -7,6 +7,10 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route("/article")
+def article():
+    return render_template("article.html")
+
 @app.route("/test")
 def test():
 	return render_template("tester.html")
