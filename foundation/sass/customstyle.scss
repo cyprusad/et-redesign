@@ -49,58 +49,74 @@
 
 .section-title {
 	padding: 10px 0;
-	border-bottom: 8px solid #000;
-
-	h1 {
-		padding: 0;
-		margin: 0;
-		text-align: right;
-		font: 400 6em "ltc-bodoni-175", "Helvetica Neue";
+	
+	
+	header {
+		border-bottom: 8px solid #000;
+		h1 {
+			padding: 0;
+			margin: 0;
+			text-align: right;
+			font: 400 6em "ltc-bodoni-175", "Helvetica Neue";
+		}
 	}
 }
 
 /* MAIN CONTENT */
 
+.section-content {
+	padding: 10px 0;
+}
+
 
 $main-colour: #49827E;
 .news-item {
+	padding: 5px 0 0 0;
 	
-	h4 {
-		font-size: 0.9em;
-		color: $main-colour;
-		padding: 0;
-		margin: 0;
-
-		.time {
-			color: #999;
-			font-size: 0.8em;
+	header {
+		h1 {
+			padding: 2px 0 0 0;
+			margin: 0;
+			font-size: 1.6em;
+			line-height: 1em;
+		}
+		a {
+			color: #000;
+			font-weight: 600;
+			font-family:  "garamond-premier-pro-display", "ltc-bodoni-175";
+			&:hover {
+				color: $main-colour;
+			}
 		}
 	}
-	h3 {
-		padding: 2px 0 0 0;
-		margin: 0;
-		font-size: 1.4em;
-		line-height: 1em;
-	}
+	
 	p {
 		padding: 5px 0 0 0;
 		font: normal 1em/1.4em Helvetica;
 	}
 
-	.news-link {
-		color: #000;
-		font-weight: 600;
-		font-family:  "garamond-premier-pro-display", "ltc-bodoni-175";
-		&:hover {
-			color: $main-colour;
-		}
+	
+}
+
+.news-item-label {
+	font-size: 0.8em;
+	font-weight: bold;
+	color: $main-colour;
+
+	.time {
+		color: #999;
+		font-size: 0.7em;
+		margin-left: 5px;
 	}
 }
 
 .main-headline {
-	h3 {
-		font-size: 2em;
+	header {
+		h1 {
+			font-size: 2em;
+		}
 	}
+	
 	p {
 		font-weight: normal;
 		font-size: 1em/1.4em;
@@ -108,15 +124,18 @@ $main-colour: #49827E;
 }
 
 .sidebar-r {
+	box-sizing: border-box;
 	background: #ced2c3;
-
+	//margin-top: -5px;
+	padding: 10px 10px;
 	p {
 		font-size: 1.2em;
 	}
+	
 }
 
 .r-section-header {
-	h4 {
+	h1 {
 		text-align: right;
 		font-size: 1.6em;
 		border-bottom: 4px solid #000;
@@ -124,7 +143,7 @@ $main-colour: #49827E;
 }
 
 .featured-videos-header {
-	h4 {
+	h1 {
 		text-align: right;
 		font-size: 1.6em;
 		border-top: 4px solid #000;
@@ -176,27 +195,29 @@ $main-colour: #49827E;
 
 
 .specials {
-		border-top: 4px solid #000;
-		border-bottom: 4px solid #000;
 		padding: 5px 10px;
+			
+		header {
+			border-top: 4px solid #000;
+		}
+
+		h1 {
+			font: bold 1.4em 'Helvetica', 'ltc-bodoni-175', serif;	
+			//text-transform: uppercase;
+		}
 
 		h2 {
-			font-family: 'ltc-bodoni-175';
-			font-weight: normal;
-			text-transform: uppercase;
-			font-size: 1.4em;
+			width: 170px;
+			font-size: 1.1em;
+			font-family: 'garamond-premier-pro-display';
+			font-weight: 400;
+		}
+		hr {
+			height: 4px;
+			color: #000;
+			background-color: #000;
 		}
 }
-
-.special-item {
-	h4 {
-		width: 170px;
-		font-size: 1.1em;
-		font-family: 'garamond-premier-pro-display';
-		font-weight: 400;
-	}
-}
-
 
 .subsection {
 	margin: 10px 0;
@@ -207,12 +228,12 @@ $main-colour: #49827E;
 			margin-right: 10px;
 		}
 	}
-	.subsection-header {
+	header {
 		padding: 0;
 	}
 	.subsection-img {
 	}
-	h5, h4 {
+	h2 {
 		font-size: 0.7em;
 		color: $main-colour;
 		padding: 0 0 0 0;
@@ -223,7 +244,7 @@ $main-colour: #49827E;
 			font-size: 0.8em;
 		}
 	}
-	h3 {
+	h1 {
 		font-size: 1.1em;
 	}
 	p {
@@ -256,14 +277,57 @@ $main-colour: #49827E;
 
 }
 
-.more-stories-sub-header {
-	h4 {
+.more-stories {
+	padding: 20px 0;
+	header {
+		border-top: 4px solid #000;
+	}
+	h1 {
+		font-size: 1.6em;
+	}
+
+	h2 {
 		font-size: 1.2em;
 		font-weight: bold;
 		border-top: 2px solid #000;
 		text-align: left;
 	}
 }
+
+
+.stock-ticker {
+	h1 {
+		font-size: 1.2em;
+		border-bottom: 2px solid #000;
+	}
+}
+
+ul.markets-list {
+	list-style: none;
+	margin: 5px 0;
+	padding: 0;
+	li {
+		margin: 5px 0;
+	}
+	h2 {
+		font-size: 1.4em;
+		margin: 0;
+		padding: 0;
+	}
+	h3 {
+		font-weight: normal;
+		font-size: 0.7em;
+		color: #999;
+		text-transform: uppercase;
+		margin: 0;
+		padding: 0 5px; 
+	}
+}
+
+.hidden {
+	display: none;
+}
+
 
 
 

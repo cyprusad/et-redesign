@@ -56,10 +56,13 @@
 /* line 50, ../../foundation/sass/customstyle.scss */
 .section-title {
   padding: 10px 0;
-  border-bottom: 8px solid #000;
 }
 /* line 54, ../../foundation/sass/customstyle.scss */
-.section-title h1 {
+.section-title header {
+  border-bottom: 8px solid #000;
+}
+/* line 56, ../../foundation/sass/customstyle.scss */
+.section-title header h1 {
   padding: 0;
   margin: 0;
   text-align: right;
@@ -67,85 +70,97 @@
 }
 
 /* MAIN CONTENT */
-/* line 68, ../../foundation/sass/customstyle.scss */
-.news-item h4 {
-  font-size: 0.9em;
-  color: #49827e;
-  padding: 0;
-  margin: 0;
+/* line 67, ../../foundation/sass/customstyle.scss */
+.section-content {
+  padding: 10px 0;
 }
-/* line 74, ../../foundation/sass/customstyle.scss */
-.news-item h4 .time {
-  color: #999;
-  font-size: 0.8em;
+
+/* line 73, ../../foundation/sass/customstyle.scss */
+.news-item {
+  padding: 5px 0 0 0;
 }
-/* line 79, ../../foundation/sass/customstyle.scss */
-.news-item h3 {
+/* line 77, ../../foundation/sass/customstyle.scss */
+.news-item header h1 {
   padding: 2px 0 0 0;
   margin: 0;
-  font-size: 1.4em;
+  font-size: 1.6em;
   line-height: 1em;
 }
-/* line 85, ../../foundation/sass/customstyle.scss */
-.news-item p {
-  padding: 5px 0 0 0;
-  font: normal 1em/1.4em Helvetica;
-}
-/* line 90, ../../foundation/sass/customstyle.scss */
-.news-item .news-link {
+/* line 83, ../../foundation/sass/customstyle.scss */
+.news-item header a {
   color: #000;
   font-weight: 600;
   font-family: "garamond-premier-pro-display", "ltc-bodoni-175";
 }
-/* line 94, ../../foundation/sass/customstyle.scss */
-.news-item .news-link:hover {
+/* line 87, ../../foundation/sass/customstyle.scss */
+.news-item header a:hover {
   color: #49827e;
+}
+/* line 93, ../../foundation/sass/customstyle.scss */
+.news-item p {
+  padding: 5px 0 0 0;
+  font: normal 1em/1.4em Helvetica;
 }
 
 /* line 101, ../../foundation/sass/customstyle.scss */
-.main-headline h3 {
+.news-item-label {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #49827e;
+}
+/* line 106, ../../foundation/sass/customstyle.scss */
+.news-item-label .time {
+  color: #999;
+  font-size: 0.7em;
+  margin-left: 5px;
+}
+
+/* line 115, ../../foundation/sass/customstyle.scss */
+.main-headline header h1 {
   font-size: 2em;
 }
-/* line 104, ../../foundation/sass/customstyle.scss */
+/* line 120, ../../foundation/sass/customstyle.scss */
 .main-headline p {
   font-weight: normal;
   font-size: 1em/1.4em;
 }
 
-/* line 110, ../../foundation/sass/customstyle.scss */
+/* line 126, ../../foundation/sass/customstyle.scss */
 .sidebar-r {
+  box-sizing: border-box;
   background: #ced2c3;
+  padding: 10px 10px;
 }
-/* line 113, ../../foundation/sass/customstyle.scss */
+/* line 131, ../../foundation/sass/customstyle.scss */
 .sidebar-r p {
   font-size: 1.2em;
 }
 
-/* line 119, ../../foundation/sass/customstyle.scss */
-.r-section-header h4 {
+/* line 138, ../../foundation/sass/customstyle.scss */
+.r-section-header h1 {
   text-align: right;
   font-size: 1.6em;
   border-bottom: 4px solid #000;
 }
 
-/* line 127, ../../foundation/sass/customstyle.scss */
-.featured-videos-header h4 {
+/* line 146, ../../foundation/sass/customstyle.scss */
+.featured-videos-header h1 {
   text-align: right;
   font-size: 1.6em;
   border-top: 4px solid #000;
 }
 
-/* line 134, ../../foundation/sass/customstyle.scss */
+/* line 153, ../../foundation/sass/customstyle.scss */
 .article-list {
   list-style: none;
   padding: 5px 0;
 }
-/* line 137, ../../foundation/sass/customstyle.scss */
+/* line 156, ../../foundation/sass/customstyle.scss */
 .article-list li {
   border-top: 1px solid #000;
   margin: 2px 0;
 }
-/* line 141, ../../foundation/sass/customstyle.scss */
+/* line 160, ../../foundation/sass/customstyle.scss */
 .article-list li a {
   display: block;
   font-size: 1em;
@@ -153,130 +168,183 @@
   font-weight: bold;
 }
 
-/* line 150, ../../foundation/sass/customstyle.scss */
+/* line 169, ../../foundation/sass/customstyle.scss */
 .sub-nav {
   margin-bottom: 2px;
 }
-/* line 152, ../../foundation/sass/customstyle.scss */
+/* line 171, ../../foundation/sass/customstyle.scss */
 .sub-nav dd {
   padding: 0;
   margin-bottom: 1px;
 }
-/* line 156, ../../foundation/sass/customstyle.scss */
+/* line 175, ../../foundation/sass/customstyle.scss */
 .sub-nav dd.active a {
   background: #000;
 }
-/* line 159, ../../foundation/sass/customstyle.scss */
+/* line 178, ../../foundation/sass/customstyle.scss */
 .sub-nav a {
   font-size: 0.8em;
   padding: 0.1875em 0.5625em;
 }
-/* line 163, ../../foundation/sass/customstyle.scss */
+/* line 182, ../../foundation/sass/customstyle.scss */
 .sub-nav a:hover {
   background: #000;
   cursor: pointer !important;
   color: #fff;
 }
 
-/* line 171, ../../foundation/sass/customstyle.scss */
+/* line 190, ../../foundation/sass/customstyle.scss */
 .featured-videos {
   padding: 5px 0;
   margin-bottom: 10px;
   height: 330px;
 }
 
-/* line 178, ../../foundation/sass/customstyle.scss */
+/* line 197, ../../foundation/sass/customstyle.scss */
 .specials {
-  border-top: 4px solid #000;
-  border-bottom: 4px solid #000;
   padding: 5px 10px;
 }
-/* line 183, ../../foundation/sass/customstyle.scss */
-.specials h2 {
-  font-family: 'ltc-bodoni-175';
-  font-weight: normal;
-  text-transform: uppercase;
-  font-size: 1.4em;
+/* line 200, ../../foundation/sass/customstyle.scss */
+.specials header {
+  border-top: 4px solid #000;
 }
-
-/* line 192, ../../foundation/sass/customstyle.scss */
-.special-item h4 {
+/* line 204, ../../foundation/sass/customstyle.scss */
+.specials h1 {
+  font: bold 1.4em 'Helvetica', 'ltc-bodoni-175', serif;
+}
+/* line 209, ../../foundation/sass/customstyle.scss */
+.specials h2 {
   width: 170px;
   font-size: 1.1em;
   font-family: 'garamond-premier-pro-display';
   font-weight: 400;
 }
+/* line 215, ../../foundation/sass/customstyle.scss */
+.specials hr {
+  height: 4px;
+  color: #000;
+  background-color: #000;
+}
 
-/* line 201, ../../foundation/sass/customstyle.scss */
+/* line 222, ../../foundation/sass/customstyle.scss */
 .subsection {
   margin: 10px 0;
   padding: 0 5px;
 }
-/* line 205, ../../foundation/sass/customstyle.scss */
+/* line 226, ../../foundation/sass/customstyle.scss */
 .subsection header img {
   float: left;
   margin-right: 10px;
 }
-/* line 210, ../../foundation/sass/customstyle.scss */
-.subsection .subsection-header {
+/* line 231, ../../foundation/sass/customstyle.scss */
+.subsection header {
   padding: 0;
 }
-/* line 215, ../../foundation/sass/customstyle.scss */
-.subsection h5, .subsection h4 {
+/* line 236, ../../foundation/sass/customstyle.scss */
+.subsection h2 {
   font-size: 0.7em;
   color: #49827e;
   padding: 0 0 0 0;
   margin: 0;
 }
-/* line 221, ../../foundation/sass/customstyle.scss */
-.subsection h5 .time, .subsection h4 .time {
+/* line 242, ../../foundation/sass/customstyle.scss */
+.subsection h2 .time {
   color: #999;
   font-size: 0.8em;
 }
-/* line 226, ../../foundation/sass/customstyle.scss */
-.subsection h3 {
+/* line 247, ../../foundation/sass/customstyle.scss */
+.subsection h1 {
   font-size: 1.1em;
 }
-/* line 229, ../../foundation/sass/customstyle.scss */
+/* line 250, ../../foundation/sass/customstyle.scss */
 .subsection p {
   font-size: 0.8em;
   padding: 5px 0 0 0;
 }
-/* line 233, ../../foundation/sass/customstyle.scss */
+/* line 254, ../../foundation/sass/customstyle.scss */
 .subsection ul {
   list-style: none;
 }
 
-/* line 240, ../../foundation/sass/customstyle.scss */
+/* line 261, ../../foundation/sass/customstyle.scss */
 .more-stories-list {
   list-style: none;
   padding: 0;
   margin: 20px 0;
 }
-/* line 244, ../../foundation/sass/customstyle.scss */
+/* line 265, ../../foundation/sass/customstyle.scss */
 .more-stories-list li {
   border-top: 1px solid #000;
 }
-/* line 247, ../../foundation/sass/customstyle.scss */
+/* line 268, ../../foundation/sass/customstyle.scss */
 .more-stories-list li a {
   color: #000;
   font-size: 0.8em;
 }
-/* line 251, ../../foundation/sass/customstyle.scss */
+/* line 272, ../../foundation/sass/customstyle.scss */
 .more-stories-list li a:hover {
   font-weight: bold;
 }
 
-/* line 260, ../../foundation/sass/customstyle.scss */
-.more-stories-sub-header h4 {
+/* line 280, ../../foundation/sass/customstyle.scss */
+.more-stories {
+  padding: 20px 0;
+}
+/* line 282, ../../foundation/sass/customstyle.scss */
+.more-stories header {
+  border-top: 4px solid #000;
+}
+/* line 285, ../../foundation/sass/customstyle.scss */
+.more-stories h1 {
+  font-size: 1.6em;
+}
+/* line 289, ../../foundation/sass/customstyle.scss */
+.more-stories h2 {
   font-size: 1.2em;
   font-weight: bold;
   border-top: 2px solid #000;
   text-align: left;
 }
 
+/* line 299, ../../foundation/sass/customstyle.scss */
+.stock-ticker h1 {
+  font-size: 1.2em;
+  border-bottom: 2px solid #000;
+}
+
+/* line 305, ../../foundation/sass/customstyle.scss */
+ul.markets-list {
+  list-style: none;
+  margin: 5px 0;
+  padding: 0;
+}
+/* line 309, ../../foundation/sass/customstyle.scss */
+ul.markets-list li {
+  margin: 5px 0;
+}
+/* line 312, ../../foundation/sass/customstyle.scss */
+ul.markets-list h2 {
+  font-size: 1.4em;
+  margin: 0;
+  padding: 0;
+}
+/* line 317, ../../foundation/sass/customstyle.scss */
+ul.markets-list h3 {
+  font-weight: normal;
+  font-size: 0.7em;
+  color: #999;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0 5px;
+}
+
+/* line 327, ../../foundation/sass/customstyle.scss */
+.hidden {
+  display: none;
+}
+
 /* custom player skin */
-/* line 271, ../../foundation/sass/customstyle.scss */
+/* line 335, ../../foundation/sass/customstyle.scss */
 .flowplayer {
   width: 90%;
   background-color: #ced2c3;
@@ -284,27 +352,27 @@
   max-width: 800px;
 }
 
-/* line 272, ../../foundation/sass/customstyle.scss */
+/* line 336, ../../foundation/sass/customstyle.scss */
 .flowplayer .fp-controls {
   background-color: #eeeeee;
 }
 
-/* line 273, ../../foundation/sass/customstyle.scss */
+/* line 337, ../../foundation/sass/customstyle.scss */
 .flowplayer .fp-timeline {
   background-color: #cccccc;
 }
 
-/* line 274, ../../foundation/sass/customstyle.scss */
+/* line 338, ../../foundation/sass/customstyle.scss */
 .flowplayer .fp-progress {
   background-color: #111111;
 }
 
-/* line 275, ../../foundation/sass/customstyle.scss */
+/* line 339, ../../foundation/sass/customstyle.scss */
 .flowplayer .fp-buffer {
   background-color: #f9f9f9;
 }
 
-/* line 276, ../../foundation/sass/customstyle.scss */
+/* line 340, ../../foundation/sass/customstyle.scss */
 .flowplayer {
   background-image: url(http://farm5.staticflickr.com/4044/4573206402_f625209528_b.jpg);
 }

@@ -28,8 +28,70 @@
 <body>
 	
 	<div class="row container">
-		<div class="large-2 columns">
-			<section class="sidebar-l">&nbsp;</section>
+	    <div class="large-2 columns">
+			<section class="sidebar-l">
+				<section class="ad-top-left">
+					<img src="http://placehold.it/120x240px">
+				</section>
+				<section class="stock-ticker">
+					<h1>Markets</h1>
+					<dl class="sub-nav">
+					  <dd class="active" id="asia-header"><a href="#" id="target-asia">ASIA	</a></dd>
+					  <dd id="eur-header"><a href="#" id="target-eur">EUR</a></dd>
+					  <dd id="us-header"><a href="#" id="target-us">US</a></dd>
+					</dl>
+					<ul class="markets-list" id="asia-markets">
+						<li>
+							<h2>18242.56</h2>
+							<h3>SENSEX</h3>
+						</li>
+						<li>
+							<h2>5528.55</h2>
+							<h3>NIFTY</h3>
+						</li>
+						<li>
+							<h2>13485.14</h2>
+							<h3>NIKKEI</h3>
+						</li>
+						<li>
+							<h2>2206.78</h2>
+							<h3>Shanghai</h3>
+						</li>
+					</ul>
+					<ul class="markets-list hidden" id="us-markets">
+						<li>
+							<h2>3294.945</h2>
+							<h3>NASDAQ</h3>
+						</li>
+						<li>
+							<h2>1588.85</h2>
+							<h3>S&P500</h3>
+						</li>
+						<li>
+							<h2>5,086.54</h2>
+							<h3>Dow Composite</h3>
+						</li>
+						
+					</ul>
+					<ul class="markets-list hidden" id="eur-markets">
+						<li>
+							<h2>6384.39</h2>
+							<h3>FTSE 100</h3>
+						</li>
+						<li>
+							<h2>7744.77</h2>
+							<h3>DAX</h3>
+						</li>
+						<li>
+							<h2>1182.10</h2>
+							<h3>Eurofirst</h3>
+						</li>
+					</ul>
+				</section>
+
+
+				
+			</section>
 		</div>
 		<div class="large-10 columns">
 			<div class="row header">
@@ -83,9 +145,9 @@
 							<a href="#">> Facebook Q4 beats expectations</a>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row section-title">
 						<div class="large-12 columns">
-							<header class="section-title">
+							<header>
 								<h1>Technology</h1>
 							</header>
 						</div>
@@ -94,22 +156,21 @@
 			</div>
 
 			<div class="row">
-				<div class="large-12 columns">
+				<div class="large-12 columns main-c">
 					<div class="row section-content">
 						<div class="large-7 columns">
 							<div class="row">
 								<div class="large-12 columns">
-									<div class="main-img">
-										<img src="/static/img/speech.jpg">
-									</div>
+									<img src="/static/img/speech.jpg">
 								</div>
 							</div>
 							<div class="row">
 								<div class="large-12 columns">
 									<section class="news-item main-headline">
-										<h4>DEALS <span class="time">1 hour ago</span></h4>
-
-										<h3><a class="news-link" href="#">Infy acquires MyMantra for $50mn</a></h3>
+										<span class="news-item-label">DEALS<span class="time">1 hour ago</span></span>
+										<header>
+											<h1><a class="news-link" href="#">Infy acquires MyMantra for $50mn</a></h1>
+										</header>
 										<p>Infosys said it acquired the lifestyle startup MyMantra, amid reports that the software giant was readying its own lifestyle portal. The deal is rumoured to be valued at $49mn in cash and $1mn in stock options.</p>
 									</section>
 								</div>
@@ -117,40 +178,51 @@
 							<div class="row">
 								<div class="large-6 columns">
 									<section class="news-item">
-										<h4>SOFTWARE <span class="time">1 hour ago</span></h4>
 
-										<h3><a class="news-link" href="#">Now a software that helps in e-learning via TV set-top boxes</a></h3>
+										<span class="news-item-label">SOFTWARE<span class="time">1 hour ago</span></span>
+
+										<header>
+											<h1><a class="news-link" href="#">Now a software that helps in e-learning via TV set-top boxes</a></h1>
+										</header>
 										<p>City-based Centre for Development of Advanced Computing (C-DAC) has launched a new software that facilitates e-learning via set-top boxes (STBs).</p>
 									</section>
 								</div>
 								<div class="large-6 columns">
 									<section class="news-item">
-										<h4>ITeS <span class="time">50 min ago</span></h4>
-										<h3><a href="#" class="news-link">Q2 profits soar among BPO firms</a></h3>
+										<span class="news-item-label">ITeS<span class="time">50 min ago</span></span>
+										<header>
+											<h1><a href="#" class="news-link">Q2 profits soar among BPO firms</a></h1>
+										</header>
 										<p>After Q2 earnings call, the country's top BPO firms competed for the most profitable ITES company. HCL Infosystems emerged as a clear winner.</p>
 									</section>
 								</div>
 							</div>
-							
-							<!--
 							<div class="row">
-								<div class="large-6 columns news-item">
-									<h4>TELECOM <span class="time">1 hour ago</span></h4>
+								<div class="large-6 columns">
+									<section class="news-item">
 
-									<h3><a class="news-link" href="#">Karbonn launches first phone on Broadcom chipsets</a></h3>
-									<p>Mobile devices company Karbonn has selected US chip maker Broadcom for its new range of 3G smartphones, following a trend where some home grown phone makers are using chipsets made by western companies. </p>
+										<span class="news-item-label">TELECOM<span class="time">1 hour ago</span></span>
+
+										<header>
+											<h1><a class="news-link" href="#">Karbonn launches first phone on Broadcom chipsets</a></h1>
+										</header>
+										<p>Mobile devices company Karbonn has selected US chip maker Broadcom for its new range of 3G smartphones, following a trend where some home grown phone makers are using chipsets made by western companies. </p>
+									</section>
 								</div>
-								<div class="large-6 columns news-item">
-									<h4>TELECOM <span class="time">50 min ago</span></h4>
-									<h3><a href="#" class="news-link">ZTE launches data cards for Indian market</a></h3>
-									<p>ZTE India, a wholly-owned subsidiary of Chinese telecom equipment maker ZTE corporation, has partnered with Digilife Distribution and Marketing Services, a subsidiary of HCL Infosystems for channel distribution and Flipkart.com for its online sales.</p>
+								<div class="large-6 columns">
+									<section class="news-item">
+										<span class="news-item-label">TELECOM<span class="time">50 min ago</span></span>
+										<header>
+											<h1><a href="#" class="news-link">ZTE launches data cards for Indian market</a></h1>
+										</header>
+										<p>ZTE India, a wholly-owned subsidiary of Chinese telecom equipment maker ZTE corporation, has partnered with Digilife Distribution and Marketing Services, a subsidiary of HCL Infosystems for channel distribution and Flipkart.com for its online sales.</p>
+									</section>
 								</div>
 							</div>
-						-->
 						</div>
 						<div class="large-5 columns">
 							<div class="sidebar-r">
-								<header class="r-section-header"><h4>Popular</h4></header>
+								<header class="r-section-header"><h1>Popular</h1></header>
 								<dl class="sub-nav">
 								  <dd class="active"><a href="#">Most Read</a></dd>
 								  <dd><a href="#">Most Commented</a></dd>
@@ -169,8 +241,8 @@
 									<li><a href="#">Twitter acquires music startup We Are Hunted</a></li>
 								</ul>
 								<div class="featured-videos">
-									 <header class="featured-videos-header"><h4>ET Tech</h4></header>
-									 <div data-swf="http://releases.flowplayer.org/5.3.2/flowplayer.swf" class="flowplayer no-toggle aside-time no-volume color-light" style="width: 323px; height: 213px;">
+									 <header class="featured-videos-header"><h1>ET Tech</h1></header>
+									 <div data-swf="http://releases.flowplayer.org/5.3.2/flowplayer.swf" class="flowplayer no-toggle aside-time no-volume color-light" style="width: 307px; height: 213px;">
 									      <video>
 									         <source type="video/webm" src="http://stream.flowplayer.org/bauhaus/624x260.webm"/>
 									         <source type="video/mp4" src="http://stream.flowplayer.org/bauhaus/624x260.mp4"/>
@@ -199,31 +271,34 @@
 						
 					</div><!-- end section-content -->
 					<div class="row specials">
-							<h2>Featured</h2>
+							<header>
+								<h1>Featured</h1>
+							</header>
 							<div class="large-3 columns">
 								<section class="special-item">
-									<img src="http://placehold.it/170x120">
-									<h4>What tablet should you buy?</h4>
+									<img src="http://placehold.it/175x120">
+									<h2>What tablet should you buy?</h2>
 								</section>
 							</div>
 							<div class="large-3 columns">
 								<section class="special-item">
-									<img src="http://placehold.it/170x120">
-									<h4>Infosys over the years</h4>
+									<img src="http://placehold.it/175x120">
+									<h2>Infosys over the years</h2>
 								</section>
 							</div>
 							<div class="large-3 columns">
 								<section class="special-item">
-									<img src="http://placehold.it/170x120">
-									<h4>A lookback at the 3G fiasco</h4>
+									<img src="http://placehold.it/175x120">
+									<h2>A lookback at the 3G fiasco</h2>
 								</section>
 							</div>
 							<div class="large-3 columns">
 								<section class="special-item">
-									<img src="http://placehold.it/170x120">
-									<h4>The Startup Kids of India</h4>
+									<img src="http://placehold.it/175x120">
+									<h2>The Startup Kids of India</h2>
 								</section>
 							</div>
+							<hr>
 					</div>
 
 					<div class="row">
@@ -236,11 +311,11 @@
 										</div>
 									</div>
 									<div class="large-8 columns">
-										<div class="subsection-header">
-											<h5>SOFTWARE</h5>
-											<h3>Google, EU near deal on search probe: Report </h3>
-											<h4>adsfasdfasdfas asdf  asdf asdf asdf asfsadf</h4>
-										</div>
+										<header>
+											<span class="news-item-label">SOFTWARE<span class="time">4 hr ago</span></span>
+											<h1>Google, EU near deal on search probe: Report </h1>
+											
+										</header>
 									</div>
 								</div>
 								
@@ -256,11 +331,11 @@
 										</div>
 									</div>
 									<div class="large-8 columns">
-										<div class="subsection-header">
-											<h5>SOFTWARE</h5>
-											<h3>Google, EU near deal on search probe: Report </h3>
-											<h4>adsfasdfasdfas asdf  asdf asdf asdf asfsadf</h4>
-										</div>
+										<header>
+											<span class="news-item-label">SOFTWARE<span class="time">4 hr ago</span></span>
+											<h1>Google, EU near deal on search probe: Report </h1>
+											
+										</header>
 									</div>
 								</div>
 								
@@ -278,9 +353,9 @@
 									</div>
 									<div class="large-8 columns">
 										<div class="subsection-header">
-											<h5>SOFTWARE</h5>
-											<h3>Google, EU near deal on search probe: Report </h3>
-											<h4>adsfasdfasdfas asdf  asdf asdf asdf asfsadf</h4>
+											<span class="news-item-label">SOFTWARE<span class="time">4 hr ago</span></span>
+											<h1>Google, EU near deal on search probe: Report </h1>
+											
 										</div>
 									</div>
 								</div>
@@ -296,11 +371,11 @@
 										</div>
 									</div>
 									<div class="large-8 columns">
-										<div class="subsection-header">
-											<h5>SOFTWARE</h5>
-											<h3>Google, EU near deal on search probe: Report </h3>
-											<h4>adsfasdfasdfas asdf  asdf asdf asdf asfsadf</h4>
-										</div>
+										<header>
+											<span class="news-item-label">SOFTWARE<span class="time">4 hr ago</span></span>
+											<h1>Google, EU near deal on search probe: Report </h1>
+											
+										</header>
 									</div>
 								</div>
 								
@@ -313,11 +388,11 @@
 								<div class="row">
 									
 									<div class="large-12 columns">
-										<div class="subsection-header">
-											<h5>SOFTWARE</h5>
-											<h3>Google, EU near deal on search probe: Report </h3>
-											<h4>adsfasdfasdfas asdf  asdf asdf asdf asfsadf</h4>
-										</div>
+										<header>
+											<span class="news-item-label">SOFTWARE<span class="time">4 hr ago</span></span>
+											<h1>Google, EU near deal on search probe: Report </h1>
+											
+										</header>
 									</div>
 								</div>
 								
@@ -328,11 +403,75 @@
 								<div class="row">
 									
 									<div class="large-12 columns">
-										<div class="subsection-header">
-											<h5>SOFTWARE</h5>
-											<h3>Google, EU near deal on search probe: Report </h3>
-											<h4>adsfasdfasdfas asdf  asdf asdf asdf asfsadf</h4>
-										</div>
+										<header>
+											<span class="news-item-label">SOFTWARE<span class="time">4 hr ago</span></span>
+											<h1>Google, EU near deal on search probe: Report </h1>
+											
+										</header>
+									</div>
+								</div>
+								
+							</section>
+						</div>
+					</div>
+					<div class="row">
+						<div class="large-6 columns">
+							<section class="subsection">
+								<div class="row">
+									
+									<div class="large-12 columns">
+										<header>
+											<span class="news-item-label">SOFTWARE<span class="time">4 hr ago</span></span>
+											<h1>Google, EU near deal on search probe: Report </h1>
+											
+										</header>
+									</div>
+								</div>
+								
+							</section>
+						</div>
+						<div class="large-6 columns">
+							<section class="subsection">
+								<div class="row">
+									
+									<div class="large-12 columns">
+										<header>
+											<span class="news-item-label">SOFTWARE<span class="time">4 hr ago</span></span>
+											<h1>Google, EU near deal on search probe: Report </h1>
+											
+										</header>
+									</div>
+								</div>
+								
+							</section>
+						</div>
+					</div>
+					<div class="row">
+						<div class="large-6 columns">
+							<section class="subsection">
+								<div class="row">
+									
+									<div class="large-12 columns">
+										<header>
+											<span class="news-item-label">SOFTWARE<span class="time">4 hr ago</span></span>
+											<h1>Google, EU near deal on search probe: Report </h1>
+											
+										</header>
+									</div>
+								</div>
+								
+							</section>
+						</div>
+						<div class="large-6 columns">
+							<section class="subsection">
+								<div class="row">
+									
+									<div class="large-12 columns">
+										<header>
+											<span class="news-item-label">SOFTWARE<span class="time">4 hr ago</span></span>
+											<h1>Google, EU near deal on search probe: Report </h1>
+											
+										</header>
 									</div>
 								</div>
 								
@@ -343,10 +482,10 @@
 					<div class="row">
 						<div class="large-12 columns">
 							<section class="more-stories">
-								<header class="more-stories-header"><h3>More Stories</h3></header>
+								<header class="more-stories-header"><h1>More Stories</h1></header>
 								<div class="row">
 									<div class="large-6 columns">
-										<header class="more-stories-sub-header"><h4>Internet</h4></header>
+										<h2>Internet</h2>
 										<ul class="more-stories-list">
 											
 											<li><a href="#">World markets set for second best week of year</a></li>
@@ -359,7 +498,7 @@
 										</ul>
 									</div>
 									<div class="large-6 columns">
-										<header class="more-stories-sub-header"><h4>Software</h4></header>
+										<h2>Software</h2>
 										<ul class="more-stories-list">
 											
 											<li><a href="#">World markets set for second best week of year</a></li>
@@ -374,7 +513,7 @@
 								</div>
 								<div class="row">
 									<div class="large-6 columns">
-										<header class="more-stories-sub-header"><h4>Telecom</h4></header>
+										<h2>Telecom</h2>
 										<ul class="more-stories-list">
 											
 											<li><a href="#">World markets set for second best week of year</a></li>
@@ -387,7 +526,7 @@
 										</ul>
 									</div>
 									<div class="large-6 columns">
-										<header class="more-stories-sub-header"><h4>ITeS</h4></header>
+										<h2>ITeS</h2>
 										<ul class="more-stories-list">
 											
 											<li><a href="#">World markets set for second best week of year</a></li>
@@ -401,21 +540,17 @@
 								</div>
 							</section>
 						</div>
+
+				
 					</div>
+
+
 					
 				</div><!-- end main 10-column grid -->
 				
 			</div><!-- end main-content-1 -->
 		</div><!-- end 10-column grid -->
 	</div><!-- end container -->
-
-
-
-
-
-
-
-
 
 
   <script>
@@ -432,6 +567,14 @@
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
      <!-- flowplayer javascript component -->
    <script src="http://releases.flowplayer.org/5.3.2/flowplayer.min.js"></script>
+
+  <script src="/static/js/et.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+
+
+  
 
   <!--
 	<script src="/static/js/foundation/foundation.alerts.js"></script>
@@ -454,15 +597,11 @@
 	
 	<script src="javascripts/foundation/foundation.reveal.js"></script>
 	
-	<script src="javascripts/foundation/foundation.section.js"></script>
+	 <script src="/static/js/foundation/foundation.section.js"></script>
 	
 	<script src="javascripts/foundation/foundation.tooltips.js"></script>
 	
 	<script src="javascripts/foundation/foundation.topbar.js"></script>
 -->
-  
-  <script>
-    $(document).foundation();
-  </script>
 </body>
 </html>
