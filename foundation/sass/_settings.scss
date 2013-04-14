@@ -719,7 +719,7 @@
 //
 
 // We use this to se the prog bar height
-// $progress-bar-height: emCalc(25px);
+ $progress-bar-height: emCalc(15px);
 
 // We use these to control the border styles
 // $progress-bar-border-color: darken(#fff, 20%);
@@ -732,10 +732,10 @@
 // $progress-bar-margin-bottom: emCalc(10px);
 
 // We use these to set the meter colors
-// $progress-meter-color: $primary-color;
+// $progress-meter-color: #000; 
 // $progress-meter-secondary-color: $secondary-color;
 // $progress-meter-success-color: $success-color;
-// $progress-meter-alert-color: $alert-color;
+// $progress-meter-alert-color: #000; //$alert-color;
 
 // NEED TO FINISH THE LOGIC HERE
 

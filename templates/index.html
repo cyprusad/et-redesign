@@ -12,6 +12,8 @@
   
   <link rel="stylesheet" href="/static/css/app.css" />
   <link rel="stylesheet" href="/static/css/customstyle.css">
+  <link rel="stylesheet" href="/static/css/general_foundicons.css">
+  <link rel="stylesheet" href="/static/css/social_foundicons.css">
 
    <!-- player skin -->
    <link rel="stylesheet" type="text/css"
@@ -30,68 +32,120 @@
 	<div class="row container">
 	    <div class="large-2 columns">
 			<section class="sidebar-l">
-				<section class="ad-top-left">
+				<section class="ad ad-top-left">
 					<img src="http://placehold.it/120x240px">
 				</section>
 				<section class="stock-ticker">
-					<h1>Markets</h1>
+					<h1 class="sidebar-l-section-header">Markets</h1>
 					<dl class="sub-nav">
 					  <dd class="active" id="asia-header"><a href="#" id="target-asia">ASIA	</a></dd>
 					  <dd id="eur-header"><a href="#" id="target-eur">EUR</a></dd>
 					  <dd id="us-header"><a href="#" id="target-us">US</a></dd>
 					</dl>
 					<ul class="markets-list" id="asia-markets">
-						<li>
-							<h2>18242.56</h2>
-							<h3>SENSEX</h3>
+						<li class="market-down">
+							<h2><i class="general foundicon-down-arrow"></i>18242.56</h2>
+							<h3>SENSEX<span>-299.64</span></h3>
 						</li>
-						<li>
-							<h2>5528.55</h2>
-							<h3>NIFTY</h3>
+						<li class="market-down">
+							<h2><i class="general foundicon-down-arrow"></i>5528.55</h2>
+							<h3>NIFTY<span>-65.45</span></h3>
 						</li>
-						<li>
-							<h2>13485.14</h2>
-							<h3>NIKKEI</h3>
+						<li class="market-down">
+							<h2><i class="general foundicon-down-arrow"></i>13485.14</h2>
+							<h3>NIKKEI<span>-64.02</span></h3>
 						</li>
-						<li>
-							<h2>2206.78</h2>
-							<h3>Shanghai</h3>
+						<li class="market-up">
+							<h2><i class="general foundicon-up-arrow"></i>2206.78</h2>
+							<h3>Shanghai<span>+12.7735</h3>
 						</li>
 					</ul>
 					<ul class="markets-list hidden" id="us-markets">
-						<li>
-							<h2>3294.945</h2>
-							<h3>NASDAQ</h3>
+						<li class="market-down">
+							<h2><i class="general foundicon-down-arrow"></i>3294.945</h2>
+							<h3>NASDAQ<span>-5.21</span></h3>
 						</li>
-						<li>
-							<h2>1588.85</h2>
-							<h3>S&P500</h3>
+						<li class="market-down">
+							<h2><i class="general foundicon-down-arrow"></i>1588.85</h2>
+							<h3 class="">S&P500<span>-4.52</span></h3>
 						</li>
-						<li>
-							<h2>5,086.54</h2>
-							<h3>Dow Composite</h3>
+						<li class="market-up">
+							<h2><i class="general foundicon-up-arrow"></i>14865.06</h2>
+							<h3>Dow Jones<span>+0.08</span></h3>
 						</li>
 						
 					</ul>
 					<ul class="markets-list hidden" id="eur-markets">
-						<li>
-							<h2>6384.39</h2>
-							<h3>FTSE 100</h3>
+						<li class="market-down">
+							<h2><i class="general foundicon-down-arrow"></i>6384.39</h2>
+							<h3>FTSE 100<span>-31.75</span></h3>
 						</li>
-						<li>
-							<h2>7744.77</h2>
-							<h3>DAX</h3>
+						<li class="market-down">
+							<h2><i class="general foundicon-down-arrow"></i>7744.77</h2>
+							<h3>DAX<span>-126.86</span></h3>
 						</li>
-						<li>
-							<h2>1182.10</h2>
-							<h3>Eurofirst</h3>
+						<li class="market-up">
+							<h2><i class="general foundicon-up-arrow"></i>2679.30</h2>
+							<h3>STOXX<span>+23.25</span></h3>
 						</li>
 					</ul>
 				</section>
 
+				<section class="stock-ticker">
+					<h1 class="sidebar-l-section-header">Tech Stocks</h1>
+					<ul class="markets-list">
+							<li class="market-down">
+								<h2><i class="general foundicon-down-arrow"></i>790.05</h2>
+								<h3>GOOG<span>-0.34</span></h3>
+							</li>
+							<li class="market-down">
+								<h2><i class="general foundicon-down-arrow"></i>272.87</h2>
+								<h3>INFY<span>-11.24</span></h3>
+							</li>
+							<li class="market-down">
+								<h2><i class="general foundicon-down-arrow"></i>429.80</h2>
+								<h3>APPL<span>-4.53</span></h3>
+							</li>
+							<li class="market-up">
+								<h2><i class="general foundicon-up-arrow"></i>1511.30</h2>
+								<h3>TCS<span>+25.00</span></h3>
+							</li>
+					</ul>
+					<input type="text" class="quote-input" placeholder="Type symbol, enter">
 
+				</section>
+
+				<section class="poll">
+					<h2 class="sidebar-l-section-header">Poll</h2>
+					<section class="question">
+					<p>Will the rupee hit 60/dollar in the next few months?</p>
+					<span class="choice">Yes (40%)</span>
+					<div class="nice progress"><span class="meter" style="width: 40%"></span></div>
+					<span class="choice">No (55%)</span>
+					<div class="nice progress"><span class="meter" style="width: 55%"></span></div>
+					<span class="choice">Can't say (5%)</span>
+					<div class="nice progress"><span class="meter" style="width: 5%"></span></div>
+					</section>
+				</section>
+
+				<section class="comic-strip">
+					<h2 class="sidebar-l-section-header">Comic Relief</h2>
+					<img src="/static/img/calvin.jpg" width="120px">
+				</section>
 				
+				<section class="ad">
+					<h2>Sponsored</h2>
+					<img src="http://placehold.it/120x600px">
+				</section>
+
+			
+
+				<section class="ad">
+					<h2>Sponsored</h2>
+					<img src="http://placehold.it/120x600px">
+				</section>
 			</section>
+			
 		</div>
 		<div class="large-10 columns">
 			<div class="row header">
@@ -99,38 +153,50 @@
 					<div class="row sections">
 						<div class="large-2 columns">
 							<section class="section-link">
-							<h3>Markets</h3>
-							<p>SENSEX reaches record-high</p>
+								<a href="#">
+									<header>Markets</header>
+									<p>SENSEX reaches record-high</p>
+								</a>
 							</section>
 						</div>
 						<div class="large-2 columns">
 							<section class="section-link">
-							<h3>Technology</h3>
-							<p>Infy acquires MyMantra for $50 mn</p>
+								<a href="#">
+									<header>Technology</header>
+									<p>Infy acquires MyMantra for $50 mn</p>
+								</a>
 							</section>
 						</div>
 						<div class="large-2 columns">
 							<section class="section-link">
-							<h3>Finance</h3>
-							<p>Mutual Funds hot to invest in for 2013	</p>
+								<a href="#">
+									<header>Finance</header>
+									<p>Mutual Funds hot to invest in for 2013	</p>
+								</a>
 							</section>
 						</div>
 						<div class="large-2 columns">
 							<section class="section-link">
-							<h3>Opinion</h3>
-							<p>Warren Buffet, ET special editor on India's future</p>
+								<a href="#">
+									<header>Opinion</header>
+									<p>Warren Buffet, ET special editor on India's future</p>
+								</a>
 							</section>
 						</div>
 						<div class="large-2 columns">
 							<section class="section-link">
-							<h3>Features</h3>
-							<p>Adweek India prepares to welcome the world's Mad Men</p>
+								<a href="#">
+									<header>Features</header>
+									<p>Adweek India prepares to welcome the world's Mad Men</p>
+								</a>
 							</section>
 						</div>
 						<div class="large-2 columns">
 							<section class="section-link last-section-link">
-							<h3>Blogs</h3>
-							<p>Soaps creating new platform for teenage actors</p>
+								<a href="#">
+									<header>Blogs</header>
+									<p>Soaps creating new platform for teenage actors</p>
+								</a>
 							</section>
 						</div>
 					</div>
@@ -289,7 +355,7 @@
 							<div class="large-3 columns">
 								<section class="special-item">
 									<img src="http://placehold.it/175x120">
-									<h2>A lookback at the 3G fiasco</h2>
+									<h2>The Immigration Reform Bill</h2>
 								</section>
 							</div>
 							<div class="large-3 columns">
