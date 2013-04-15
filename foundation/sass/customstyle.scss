@@ -6,15 +6,15 @@
 
 	@media only screen and (min-width: 320px) {
 		top: 0;
-		border-top: 4px solid #000;
+		//border-top: 4px solid #000;
 	}
 	@media only screen and (min-width: 480px) {
 		top: 0;
-		border-top: 4px solid #000;
+		//border-top: 4px solid #000;
 	}
 	@media only screen and (min-width: 768px) {
 		top: 20px;
-		border-top: none;
+		//border-top: none;
 	}
 }
 
@@ -680,7 +680,8 @@ input.quote-input {
 			font-family: "acta-display", "Garamond", serif;
 			color: #000;
 			font-size: 3em;
-			margin: 0 0 10px 0;
+			margin: 5px 0 10px 0;
+			text-align: center;
 			@media only screen and (min-width: 320px) {
 				font-size: 1.8em;
 			}
@@ -770,6 +771,8 @@ input.quote-input {
 	.divider {
 		border-top: 1px solid rgb(206, 206, 206) !important;
 	}
+
+	border-bottom: 4px solid #000;
 	
 	@media only screen and (min-width: 320px) {
 		display: block;
@@ -807,7 +810,6 @@ input.quote-input {
 	}
 	background: #fff;
 	border-top: 1px solid #000;
-	border-bottom: 1px solid #000;
 }
 
 
