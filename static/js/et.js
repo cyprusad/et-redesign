@@ -67,3 +67,12 @@ $("#target-most-shared").click(function() {
       $("#most-commented-header").removeClass("active");
       $("#most-shared-header").addClass("active");
 });
+
+$(window).scroll(
+
+  function() { 
+    var y_scroll_pos = window.pageYOffset; var scroll_pos_test = 130; 
+    if(y_scroll_pos > scroll_pos_test) { 
+      $('.navwrapper').addClass("fixed"); 
+    } else { $('.navwrapper').removeClass("fixed");}
+  });
